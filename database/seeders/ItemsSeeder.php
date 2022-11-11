@@ -31,7 +31,7 @@ class ItemsSeeder extends Seeder
                     "price" => 42000,
                     "description" => "This smoked salmon appetizer is easy and perfect for parties! Cucumber, cream cheese and dill make a crowd-pleasing snack.",
                     "type" => "Appetizer",
-                    "image" => "https://www.acouplecooks.com/wp-content/uploads/2022/01/Smoked-Salmon-Appetizer-006.jpg"
+                    "image" => "https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2018/08/smoked-salmon-avocado-cucumber-bites-5.jpg"
                 ],
                 [
                     "id" => 3,

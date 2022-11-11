@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ItemController;
 use App\Models\items;
 use Illuminate\Support\Facades\Route;
 
@@ -18,10 +19,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home', function(){
-    $arrItems = items::all();
+// Route::get('/home', function(){
+//     $arrItems = items::all();
 
-    return view('home')
-    ->with('items', $arrItems);
-    //nama variabel, isi
-});
+//     return view('home')
+//     ->with('items', $arrItems);
+//     //nama variabel, isi
+// });
+
+Route::get('/home',[ItemController::class, 'index'] );
