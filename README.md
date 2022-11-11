@@ -1,12 +1,19 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
-
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
-
+## Nama - NIM : Karin Northus - 2440062086
+## Notes :
+- Sebuah website bernama "Foodie" yang menampilkan menu makanan, terdiri dari gambar, deskripsi makanan, harga dan tipe makanan (main-course, appetizer atau dessert)
+- Bagian pertama website menampilkan carousel menggunakan BootStrap, terdiri dari 3 slide yang menjelaskan 3 tipe makanan yaitu maincourse, appetizer dan dessert.
+- Kemudian dilanjutkan dengan menu/data makanan yang ada
+- Data makanan diambil dari database, di mana database menggunakan migration dan data di masukkan menggunakan seeder.
+- Data makanan diambil melalui table "items"
+- Terdapat 1 Controller disini yaitu ItemController, yang terdiri dari function index di mana mengambil data makanan dari database dan mengirimnya ke view (home.blade.php) dengan mengirimkan parameter berupa array data makanan dari database
+- Pada file "web.php" routing dilakukan ketika menggunakan '/home'. Di mana akan memanggil ItemController dan merujuk pada function index
+- @include digunakan pada file 'template.blade.php', di mana meng-include file 'header.blade.php' yang berisi navbar
+- @extends digunakan pada file 'home.blade.php' yang meng-extends file 'template.blade.php'
+- @yields digunakan pada file 'template.blade.php'
+- @section digunakan pada file 'home.blade.php'
+- @foreach digunakan pada file 'home.blade.php' yang digunakan untuk mengambil dan menampilkan semua data makanan dari database
+- @if digunakan pada file 'home.blade.php' yang digunakan sebagai pembeda dari 3 tipe makanan yang ada dan dibedakan berdasarkan warna
+- Menggunakan framework CSS yaitu bootstrap
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
